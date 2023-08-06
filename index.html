@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WC</title>
+    <!--Libraries-->
+        <!--Bootsrtap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <!--//Bootsrtap//-->
+
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@900&family=Open+Sans:wght@800&family=Roboto:wght@900&display=swap" rel="stylesheet">
+        <!--//Google fonts//-->
+    <style>
+        body {
+            font-family: 'almarai',sans-serif;
+        }
+        .bg-primary {
+            background: #811538 !important;
+            color: white;
+        }
+
+        .bg-secondary {
+            background: #5b0d25 !important;
+            color: white;
+        }
+
+        #header-background {
+            background-image: url("pattern.png");
+        }
+        #header {
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+            border-bottom: solid 20px #5b0d25;
+        }
+        #logo-header {
+            position: absolute;
+            z-index: 999;
+            left: 100px;
+            top: 60px;
+        }
+        #logo-img {
+            height: 300px;
+            -webkit-filter: drop-shadow(5px 5px 30px #222);
+            filter: drop-shadow(5px 5px 30px #222);
+        }
+    </style>
+</head>
+<body>
+
+    <!--Logo header-->
+    <div id="logo-header">
+        <img id="logo-img" src="logo.png" alt="">
+
+    </div>
+    <!--//Logo header//-->
+
+    <!--header-->
+    <div id="header" style="height: 20rem;" class="bg-primary">
+        <div id="header-background" style="width: 100%; height:100%;">
+            <div class="p-5" style="direction:rtl; font-size: 50px; margin-right: 100px; color:white">
+                <h1 style="font-size:70px; font-weight:800;">كأس</h1>
+                <h1 style="font-size:90px; font-weight:800;">العالم</h1>
+            </div>
+
+        </div>
+
+    </div>
+    <!--//header//-->
+
+
+    <!--Qatar word-->
+    <div class="d-flex justify-content-center" style="margin-top: 30px;">
+        <img src="qatar-word.png" alt="" style="width:400px;">
+    </div>
+    <!--//Qatar word//-->
+
+    <!--Main content-->
+    <div class="container" style="margin-top: 50px">
+        
+        <!--Standings-->
+        <div class="p-5 mt-1">
+
+            <!--Title-->
+            <div class="row" style="direction: rtl;">
+                <h1>
+                    <b>
+                        المجموعات
+                    </b>
+                </h1>
+                <hr>
+            </div>
+            <!--//Title//-->
+
+            <!--Standings row-->
+            <div class="row" id="standings">
+
+
+                <!--Standing col-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Group (A)</b>
+                        </div>
+
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+
+                        </div>
+
+                        <!--Teams-->
+                        <ul class="list-group list-group-flush">
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px; object-fit: cover;" 
+                                            class="rounded-circle border border-2"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png"  alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png"  alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+                        </ul>
+                        <!--//Teams//-->
+                    </div>
+
+                </div>
+                <!--//Standing col//-->
+
+                <!--Standing col-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Group (A)</b>
+                        </div>
+
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+
+                        </div>
+
+                        <!--Teams-->
+                        <ul class="list-group list-group-flush">
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png"
+                                            alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+                        </ul>
+                        <!--//Teams//-->
+                    </div>
+
+                </div>
+                <!--//Standing col//-->
+
+                <!--Standing col-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Group (A)</b>
+                        </div>
+
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+
+                        </div>
+
+                        <!--Teams-->
+                        <ul class="list-group list-group-flush">
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+                        </ul>
+                        <!--//Teams//-->
+                    </div>
+
+                </div>
+                <!--//Standing col//-->
+
+                <!--Standing col-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Group (A)</b>
+                        </div>
+
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+
+                        </div>
+
+                        <!--Teams-->
+                        <ul class="list-group list-group-flush">
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+                        </ul>
+                        <!--//Teams//-->
+                    </div>
+
+                </div>
+                <!--//Standing col//-->
+
+                <!--Standing col-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Group (A)</b>
+                        </div>
+
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+
+                        </div>
+
+                        <!--Teams-->
+                        <ul class="list-group list-group-flush">
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+                        </ul>
+                        <!--//Teams//-->
+                    </div>
+
+                </div>
+                <!--//Standing col//-->
+
+                <!--Standing col-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Group (A)</b>
+                        </div>
+
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+
+                        </div>
+
+                        <!--Teams-->
+                        <ul class="list-group list-group-flush">
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+                        </ul>
+                        <!--//Teams//-->
+                    </div>
+
+                </div>
+                <!--//Standing col//-->
+
+                <!--Standing col-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Group (A)</b>
+                        </div>
+
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+
+                        </div>
+
+                        <!--Teams-->
+                        <ul class="list-group list-group-flush">
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+                        </ul>
+                        <!--//Teams//-->
+                    </div>
+
+                </div>
+                <!--//Standing col//-->
+
+                <!--Standing col-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Group (A)</b>
+                        </div>
+
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+
+                        </div>
+
+                        <!--Teams-->
+                        <ul class="list-group list-group-flush">
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+
+                            <!--Team-->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                        <span>
+                                            <img
+                                            style="height: 40px; width: 40px" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--//Team//-->
+                        </ul>
+                        <!--//Teams//-->
+                    </div>
+
+                </div>
+                <!--//Standing col//-->
+
+            </div>
+            <!--//Standings row//-->
+        </div>
+        <!--//Standings//-->
+
+
+        <!--Matches-->
+        <div>
+
+            <!--Title row-->
+            <div class="row" style="direction: rtl;">
+                <h1>
+                    <b>
+                        المباريات
+                    </b>
+                </h1>
+                <hr>
+            </div>
+            <!--//Title row//-->
+
+            <!--Matches row-->
+            <div class="row" id="matches">
+
+                <!--Match col-->
+                <div class="col-sm-12">
+
+                    <div class="card shadow rounded-pill" style="overflow: hidden;">
+                        <div class="card-body p-0">
+                            <div class="row" style="height: 120px;">
+
+                                <!--First team col-->
+                                <div 
+                                class="col-sm-3 bg-primary d-flex flex-direction-col justify-content-center align-items-center" style="border-right: solid 5px #5b0d25;">
+
+                                    <div class="d-flex justify-content-center align-items-center">
+
+                                        <!--Image and name div-->
+                                        <div>
+                                        <div class="flag">
+                                            <img
+                                            style="height: 40px; width: 40px;" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </div>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                        </div>
+                                        <!--//Image and name div//-->
+
+                                    </div>
+
+                                </div>
+                                <!--//First team col//-->
+
+                                <!--Match info col-->
+                                <div class="col-sm-6" style="text-align:center">
+                                    <h6>Group (A)</h6>
+                                    <h1>X</h1>
+                                    <h6>18:30</h6>
+                                </div>
+                                <!--//Match info col//-->
+
+                                <!--Second team col-->
+                                <div 
+                                class="col-sm-3 bg-primary d-flex flex-direction-col justify-content-center align-items-center" style="border-left: solid 5px #5b0d25;">
+
+                                    <div class="d-flex justify-content-center align-items-center">
+
+                                        <!--Image and name div-->
+                                        <div>
+                                        <div class="flag">
+                                            <img
+                                            style="height: 40px; width: 40px;" 
+                                            class="rounded-circle"
+                                            src="./Flag_of_Saudi_Arabia.png" alt="">
+                                        </div>
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                        </div>
+                                        <!--//Image and name div//-->
+
+                                    </div>
+
+                                </div>
+                                <!--//Second team col//-->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--//Match col//-->
+            </div>
+            <!--//Matches row//-->
+
+        </div>
+        <!--//Matches//-->
+
+    </div>
+    <!--//Main content//-->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+<script>
+    const token = "5b624ce0b00b4d45be6ed8ab9fdc3b73"
+    const baseUrl = "https://api.football-data.org/v4/competitions/2000"
+
+    function getStandings(){
+        const url = `${baseUrl}/standings`
+
+        axios.get(url,{
+            "headers":{
+                "X-Auth-Token":token
+            }
+        })
+        .then((response) => {
+            const standings = response.data.standings
+
+            document.getElementById("standings").innerHTML = ""
+            for(standing of standings)
+            {
+                let tableContent = ""
+                for(row of standing.table)
+                {
+                    tableContent+=`
+                    <!--Team-->
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span>
+                                    <img
+                                    style="height: 40px; width: 40px; object-fit: cover;" 
+                                    class="rounded-circle"
+                                    src="${row.team.crest}" alt="">
+                                </span>
+                                <h5 style="margin: auto 4px">
+                                    <b>${row.team.tla}</b>
+                                </h5>
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                ${row.won}
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                ${row.lost}
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                ${row.draw}
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>${row.points}</b>
+                            </div>
+                        </div>
+                    </li>
+                    <!--//Team//-->
+                    `
+                }
+
+                content = `
+                <!--Standing col-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>${standing.group}</b>
+                        </div>
+
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+
+                        </div>
+
+                        <!--Teams-->
+                        <ul class="list-group list-group-flush">
+                            ${tableContent}
+                        </ul>
+                        <!--//Teams//-->
+                    </div>
+
+                </div>
+                <!--//Standing col//-->
+                `
+
+                document.getElementById("standings").innerHTML += content
+            }
+        })
+    }
+
+
+    function getMatches(){
+        const url = `${baseUrl}/matches`
+
+        axios.get(url,{
+            "headers":{
+                "X-Auth-Token":token
+            }
+        })
+        .then((response) => {
+            console.log(response.data)
+
+            const matches = response.data.matches
+            document.getElementById("matches").innerHTML = ""
+
+            for(match of matches){
+                const homeTeam = match.homeTeam
+                const awayTeam = match.awayTeam
+
+                const utcDate = match.utcDate
+                const matchTime = new Date(utcDate)
+                const dateString = matchTime.getUTCFullYear() + " / " + (matchTime.getUTCMonth()+1) + " / " + matchTime.getUTCDate() + " {" + matchTime.getUTCHours() + ":" + matchTime.getUTCMinutes() + "}" 
+
+                if(homeTeam.name === null){
+                    continue
+                }
+
+                const content =`
+                                <!--Match col-->
+                                <div class="col-sm-12">
+
+                                    <div class="card shadow rounded-pill mt-5" style="overflow: hidden;">
+                                        <div class="card-body p-0">
+                                            <div class="row" style="height: 120px;">
+
+                                                <!--First team col-->
+                                                <div 
+                                                class="col-sm-3 bg-primary d-flex flex-direction-col justify-content-center align-items-center" style="border-right: solid 5px #5b0d25;">
+
+                                                    <div class="d-flex justify-content-center align-items-center">
+
+                                                        <!--Image and name div-->
+                                                        <div>
+                                                        <div class="flag">
+                                                            <img
+                                                            style="height: 40px; width: 40px; object-fit: cover;" 
+                                                            class="rounded-circle"
+                                                            src="${homeTeam.crest}" alt="">
+                                                        </div>
+                                                        <h5 style="margin: auto 4px">
+                                                            <b>${homeTeam.tla}</b>
+                                                        </h5>
+                                                        </div>
+                                                        <!--//Image and name div//-->
+
+                                                    </div>
+
+                                                </div>
+                                                <!--//First team col//-->
+
+                                                <!--Match info col-->
+                                                <div class="col-sm-6" style="text-align:center">
+                                                    <div class="row">
+
+                                                        <div class="col-sm-4" style="margin: auto 0px">
+                                                            <h3>
+                                                                ${match.score.fullTime.home ?? "-"}
+                                                            </h3>
+                                                        </div>
+
+                                                        <div class="col-sm-4" style="margin: auto 0px">
+                                                            <h6>${match.group}</h6>
+                                                            <h1>X</h1>
+                                                            <h6>${dateString}</h6>
+                                                        </div>
+
+                                                        <div class="col-sm-4" style="margin: auto 0px">
+                                                            <h3>
+                                                                ${match.score.fullTime.away ?? "-"}
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!--//Match info col//-->
+
+                                                <!--Second team col-->
+                                                <div 
+                                                class="col-sm-3 bg-primary d-flex flex-direction-col justify-content-center align-items-center" style="border-left: solid 5px #5b0d25;">
+
+                                                    <div class="d-flex justify-content-center align-items-center">
+
+                                                        <!--Image and name div-->
+                                                        <div>
+                                                        <div class="flag">
+                                                            <img
+                                                            style="height: 40px; width: 40px; object-fit: cover;" 
+                                                            class="rounded-circle"
+                                                            src="${awayTeam.crest}" alt="">
+                                                        </div>
+                                                        <h5 style="margin: auto 4px">
+                                                            <b>${awayTeam.tla}</b>
+                                                        </h5>
+                                                        </div>
+                                                        <!--//Image and name div//-->
+
+                                                    </div>
+
+                                                </div>
+                                                <!--//Second team col//-->
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!--//Match col//-->
+                `
+
+                document.getElementById("matches").innerHTML += content
+
+            }
+            
+        })
+    }
+
+    //getStandings()
+    getMatches()
+</script>
+</html>
